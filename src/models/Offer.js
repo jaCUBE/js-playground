@@ -21,12 +21,12 @@ export class Offer {
      * @returns {number} Logical SIM count for offer filtering
      */
 
-    static getLogicalSimCount(simcount){
-        if(simcount === 3){
+    static getLogicalSimCount(simcount) {
+        if (simcount === 3) {
             return 4;
         }
 
-        if (simcount === 5){
+        if (simcount === 5) {
             return 6;
         }
 
