@@ -101,11 +101,22 @@ eval("module.exports = {\"build\":\"2018-07-23 18:48:26\",\"version\":\"4e69718\
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./init.js */ \"./src/init.js\");\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/init.js":
+/*!*********************!*\
+  !*** ./src/init.js ***!
+  \*********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data/convergence_2018-07-25.json */ \"./src/data/convergence_2018-07-25.json\");\nvar _data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./data/convergence_2018-07-25.json */ \"./src/data/convergence_2018-07-25.json\", 1);\n/* harmony import */ var _models_Offer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./models/Offer */ \"./src/models/Offer.js\");\n/* harmony import */ var _models_OfferList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./models/OfferList */ \"./src/models/OfferList.js\");\nconsole.time('init');\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n// Main instance of Offer List\r\nlet offerList = new _models_OfferList__WEBPACK_IMPORTED_MODULE_2__[\"OfferList\"](_data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0__);\r\nconsole.log('Initial OfferList', offerList);\r\nconsole.timeEnd('init');\r\n\r\n\r\n\r\nconsole.time('testFiltering');\r\nlet testFiltering = offerList.filterBySimCount(2).filterByFup(10).filterByFixedSpeed(100).getFilteredOffers();\r\nconsole.log('Filtering 2 SIMs, 10 GB, 100 Mbps', testFiltering);\r\nconsole.timeEnd('testFiltering');\r\n\r\n\r\n\r\nconsole.time('testSimLogical');\r\nlet testSimLogical = offerList.filterBySimCount(3).getFilteredOffers();\r\nconsole.log('Filtering offer for selected 3 SIMs', testSimLogical);\r\nconsole.timeEnd('testSimLogical');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data/convergence_2018-07-25.json */ \"./src/data/convergence_2018-07-25.json\");\nvar _data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./data/convergence_2018-07-25.json */ \"./src/data/convergence_2018-07-25.json\", 1);\n/* harmony import */ var _models_OfferList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./models/OfferList */ \"./src/models/OfferList.js\");\nconsole.time('init');\r\n\r\n\r\n\r\n\r\n\r\n\r\n// Main instance of Offer List\r\nlet offerList = new _models_OfferList__WEBPACK_IMPORTED_MODULE_1__[\"OfferList\"](_data_convergence_2018_07_25_json__WEBPACK_IMPORTED_MODULE_0__);\r\nconsole.log('Initial OfferList', offerList);\r\nconsole.timeEnd('init');\r\n\r\n\r\n\r\nconsole.time('testFiltering');\r\nlet testFiltering = offerList.filterBySimCount(2).filterByFup(10).filterByFixedSpeed(100).getFilteredOffers();\r\nconsole.log('Filtering 2 SIMs, 10 GB, 100 Mbps', testFiltering);\r\nconsole.timeEnd('testFiltering');\r\n\r\n\r\n\r\nconsole.time('testSimLogical');\r\nlet testSimLogical = offerList.filterBySimCount(3).getFilteredOffers();\r\nconsole.log('Filtering offer for selected 3 SIMs', testSimLogical);\r\nconsole.timeEnd('testSimLogical');\n\n//# sourceURL=webpack:///./src/init.js?");
 
 /***/ }),
 
